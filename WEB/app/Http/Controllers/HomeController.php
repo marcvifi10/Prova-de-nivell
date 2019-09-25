@@ -56,7 +56,7 @@ class HomeController extends Controller
 		    return view("frontend.autors.cataleg",compact('autors'));
     }
 	
-	public function llibresCategoria($nom) 
+	public function llibresCategoria(Request $nom) 
     {
 
          $llibres = Llibre::where('autor',$nom)->get();
